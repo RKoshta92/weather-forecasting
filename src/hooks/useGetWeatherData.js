@@ -14,7 +14,7 @@ const useGetWeatherData = () => {
     try {
       setLoading(true);
       setError("");
-      const currentWeatherUrl = `${BASE_URL}/forecast.json?key=${API_KEY}&q=${city}&hours=24&days=7`;
+      const currentWeatherUrl = `${BASE_URL}/forecast.json?key=${API_KEY}&q=${city}&hours=24`;
       const forecastUrl = `${BASE_URL}/forecast.json?key=${API_KEY}&q=${city}&days=7`;
 
       const currentResponse = await axios.get(currentWeatherUrl);
