@@ -1,0 +1,94 @@
+.container {
+    min-height: calc(100vh - 66px);
+    width: 100%;
+    display: flex;
+    color: #fff;
+    box-sizing: border-box;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      min-height: 100%;
+      padding: 24px 18px;
+    }
+}
+
+.left_container {
+    width: 50%;
+    background-color: #000;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.right_container {
+    width: 50%;
+    background-image: url('/weather-back.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+
+    @media (max-width: 768px) {
+       display: none;
+    }
+}
+
+.content_container {
+    width: 680px;
+    margin: auto;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.2em;
+
+    @media (max-width: 768px) {
+        font-size: 48px;
+    }
+}
+
+.typewriter {
+    background: url('/gradient.jpg') no-repeat center center;
+    background-size: 100% 100%;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    font-size: 78px;
+    font-weight: 700;
+    line-height: 1.2em;
+
+
+    @media (max-width: 768px) {
+       font-size: 48px;
+    }
+}
+
+.description {
+    padding: 42px 0;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.styled_button {
+    background-color: #0000ff;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+    padding: 0 30px;
+    color: #fff;
+    border: 1px solid transparent;
+    font-weight: 600;
+    border-radius: 2px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.button_wrapper {
+    display: flex;
+}

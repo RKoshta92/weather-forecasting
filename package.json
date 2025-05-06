@@ -1,0 +1,32 @@
+{
+  "name": "weather-forecasting",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@mui/icons-material": "^7.1.0",
+    "axios": "^1.9.0",
+    "dayjs": "^1.11.13",
+    "next": "14.2.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-hook-form": "^7.56.2",
+    "react-simple-typewriter": "^5.0.1"
+  },
+  "devDependencies": {
+    "@emotion/cache": "11.11.0",
+    "@emotion/react": "11.11.4",
+    "@emotion/styled": "11.11.5",
+    "@eslint/eslintrc": "^3",
+    "@mui/material": "5.15.16",
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.1",
+    "tailwindcss": "^4"
+  }
+}
