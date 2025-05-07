@@ -109,6 +109,12 @@ const WeatherForecast = () => {
               )}
             />
           </form>
+          {loading && (
+            <Typography sx={{ mt: 1, ml: 2, color: "#1d5f6d" }}>
+              Fetching...
+            </Typography>
+          )}
+
           {error && (
             <Typography sx={{ mt: 1, ml: 2 }} color="error">
               {error}

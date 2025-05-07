@@ -30,13 +30,13 @@ const AirConditionsCard = ({ current }) => {
           </p>
         </div>
         <div>
-          <p className="flex items-center">💨 Wind Degree</p>
+          <p className="flex items-center">🧭 Wind Degree</p>
           <p className="text-2xl font-semibold text-white">
             {current.wind_degree}
           </p>
         </div>
         <div>
-          <p className="flex items-center">💨 Wind Direction</p>
+          <p className="flex items-center">🌬️ Wind Direction</p>
           <p className="text-2xl font-semibold text-white">
             {current.wind_dir}
           </p>
@@ -64,17 +64,16 @@ const ForecastDetails = ({ weatherData }) => {
     })
   );
 
-  const current = weatherData.current;
-  const location = weatherData.location;
-
   return (
     <Box>
       <CardContent sx={{ p: 0, mb: 2 }}>
         <div className="flex justify-between items-center mb-6">
           <div>
-            <h2 className="text-2xl font-bold">{location.name}</h2>
+            <h2 className="text-2xl font-bold">{weatherData.location.name}</h2>
             <p className="text-gray-400 text-sm">Chance of rain: 0%</p>
-            <h1 className="text-5xl mt-2">{Math.round(current.temp_c)}°</h1>
+            <h1 className="text-5xl mt-2">
+              {Math.round(weatherData.current.temp_c)}°
+            </h1>
           </div>
           <img
             src={weatherData.current?.condition?.icon}
