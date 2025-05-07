@@ -9,7 +9,7 @@ const WeeklyForecast = ({ forecast }) => {
       <div>
         {forecast.map((dayData, index) => {
           const dayName =
-            index === 0 ? "Today" : dayjs(dayData.date).format("ddd");
+            index === 0 ? "Today" : dayjs(dayData.date).format("DD - ddd");
           return (
             <div
               key={index}

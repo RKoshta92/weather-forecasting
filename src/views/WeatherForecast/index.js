@@ -12,7 +12,7 @@ import {
   Typography,
 } from "@mui/material";
 import { Controller, useForm } from "react-hook-form";
-import ForecastDetails from "./ForecastDetails";
+import TodaysForecast from "./TodaysForecast";
 import WeeklyForecast from "./WeeklyForecast";
 
 const WeatherForecast = () => {
@@ -42,8 +42,8 @@ const WeatherForecast = () => {
             Find Weather Updates <br /> for Any Location
           </div>
           <div className="text-[16px] font-semibold text-[#1d5f6d] my-4 mb-8">
-            Get real-time weather forecasts with a beautiful UI <br /> and
-            trusted data sources.
+            Get real-time weather forecasts powered by
+            <br /> trusted data sources.
           </div>
 
           <form onSubmit={handleSubmit(onSubmit)}>
@@ -125,7 +125,7 @@ const WeatherForecast = () => {
       {weatherData?.current && weatherData?.forecast && !loading && (
         <Grid container spacing={4} mt={1}>
           <Grid item xs={7} md={7}>
-            <ForecastDetails weatherData={weatherData?.current} />
+            <TodaysForecast weatherData={weatherData?.current} />
           </Grid>
           <Grid item xs={5} md={5}>
             <WeeklyForecast forecast={weatherData?.forecast} />

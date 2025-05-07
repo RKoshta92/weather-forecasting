@@ -54,7 +54,7 @@ const AirConditionsCard = ({ current }) => {
   );
 };
 
-const ForecastDetails = ({ weatherData }) => {
+const TodaysForecast = ({ weatherData }) => {
   const hourlyForecast = (weatherData.forecast.forecastday[0].hour || []).map(
     (hour) => ({
       time: dayjs(hour.time).format("h A"),
@@ -112,4 +112,4 @@ const ForecastDetails = ({ weatherData }) => {
   );
 };
 
-export default ForecastDetails;
+export default TodaysForecast;
