@@ -67,10 +67,9 @@ const ForecastDetails = ({ weatherData }) => {
   return (
     <Box>
       <CardContent sx={{ p: 0, mb: 2 }}>
-        <div className="flex justify-between items-center mb-6">
+        <div className="flex justify-between items-center mb-2">
           <div>
             <h2 className="text-2xl font-bold">{weatherData.location.name}</h2>
-            <p className="text-gray-400 text-sm">Chance of rain: 0%</p>
             <h1 className="text-5xl mt-2">
               {Math.round(weatherData.current.temp_c)}°
             </h1>
@@ -80,6 +79,18 @@ const ForecastDetails = ({ weatherData }) => {
             alt={weatherData.current?.condition?.text}
             style={{ height: "64px", width: "64px" }}
           />
+        </div>
+
+        <div className="flex justify-between items-center mb-5">
+          <span>💧 Humidity: {weatherData.current?.humidity}%</span>
+          <span>
+            🌡️ Pressure: {weatherData.current?.pressure_in} in (
+            {weatherData.current?.pressure_mb} mb)
+          </span>
+          <span>
+            🌈 Precipitation: {weatherData.current?.precip_in} in (
+            {weatherData.current?.precip_mm} mm)
+          </span>
         </div>
 
         <div className="bg-[#374151] rounded-xl p-4">

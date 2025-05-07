@@ -115,7 +115,7 @@ const WeatherForecast = () => {
             </Typography>
           )}
 
-          {error && (
+          {error && !loading && (
             <Typography sx={{ mt: 1, ml: 2 }} color="error">
               {error}
             </Typography>
