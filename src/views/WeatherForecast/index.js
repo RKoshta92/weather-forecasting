@@ -124,10 +124,10 @@ const WeatherForecast = () => {
       </Grid>
       {weatherData?.current && weatherData?.forecast && !loading && (
         <Grid container spacing={4} mt={1}>
-          <Grid item xs={7} md={7}>
+          <Grid item xs={12} md={7}>
             <TodaysForecast weatherData={weatherData?.current} />
           </Grid>
-          <Grid item xs={5} md={5}>
+          <Grid item xs={12} md={5}>
             <WeeklyForecast forecast={weatherData?.forecast} />
           </Grid>
         </Grid>
