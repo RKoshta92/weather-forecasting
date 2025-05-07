@@ -20,6 +20,8 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet"
         />
+        <link rel="preload" href="/weather-back.png" as="image" />
+        <link rel="preload" href="/weather-search.png" as="image" />
       </head>
       <body>
         <Navbar />
